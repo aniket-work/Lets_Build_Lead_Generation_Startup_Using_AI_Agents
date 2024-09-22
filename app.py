@@ -42,15 +42,24 @@ def main():
                 {"messages": ("user", prompt)}, config, stream_mode="values"
             )
 
+            full_response = ""
+            seen_messages = set()
+
             for event in events:
                 if 'messages' in event:
                     for message in event['messages']:
                         if hasattr(message, 'content'):
-                            full_response += message.content + "\n\n"
-                            message_placeholder.markdown(full_response + "▌")
+                            # Check if we've seen this exact message before
+                            if message.content not in seen_messages:
+                                seen_messages.add(message.content)
+                                full_response += message.content + "\n\n"
+                                message_placeholder.markdown("Processing..." + full_response + " *** ")
 
+            # Clear the placeholder and display the final response
+            message_placeholder.empty()
             message_placeholder.markdown(full_response)
-        st.session_state.messages.append({"role": "assistant", "content": full_response})
+
+            st.session_state.messages.append({"role": "assistant", "content": full_response})
 
 
 if __name__ == "__main__":
