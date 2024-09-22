@@ -1,0 +1,7 @@
+streamlit
+langchain-ollama
+langchain-core
+langchain-community
+typing_extensions
+langgraph
+langchain_experimental
