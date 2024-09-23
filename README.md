@@ -1,22 +1,16 @@
-# Lets_Build_Lead_Generation_Startup_Using_AI_Agents
-This repository provides a comprehensive framework for developing a lead generation startup powered by AI agents (LangGraph, Ollama, Llama3.1). It includes modules for data acquisition, processing, and intelligent decision-making to enhance lead qualification and conversion. 
+# Let's Build Lead Generation Startup Using AI Agents
 
-
-# Lets_Build_Lead_Generation_Startup_Using_AI_Agents
-This repository provides a comprehensive framework for developing a lead generation startup powered by AI agents (LangGraph, Ollama, Llama3.1). It includes modules for data acquisition, processing, and intelligent decision-making to enhance lead qualification and conversion.
-
-
-
-
-# Lets_Build_Lead_Generation_Startup_Using_AI_Agents
-Building Code RAG Using CodeLlama and Qdrant
-
+Practical Guild for Building a Lead Generation Startup Powered by AI Agents
+ 
 ## Introduction
 
-Full Article : [https://medium.com/@learn-simplified/lotus-semantic-search-over-structured-unstructured-data-f24fed45af63
+Picture this: You’re running a smart thermostat company, and you want to boost your sales. How do you do it? By harnessing the power of AI, of course! That’s exactly what we did at Aniket Electronics Ltd. (fictional) We built an AI assistant that not only chats with potential customers but also crunches numbers to show them how much they could save, then collect there contact details, save into database, so marketing team can use that. It’s like having a super-smart, never-tired salesperson working 24/7. Let me walk you through how we did it.
 
-Hands on with Declarative prog model & optimized query engine for serving powerful reasoning-based query pipelines over structured and unstructured data
+Full Article : [https://medium.com/@learn-simplified/lets-build-lead-generation-startup-using-ai-agents-e608c1efe7ba
 
+This article is a behind-the-scenes look at how we created an AI-powered lead generator for our smart thermostats. We’re going to dive into the nuts and bolts of building a chatbot that can do more than just talk — it can calculate savings, store customer information, and guide potential buyers through the decision-making process.
+
+You’ll see how we used tools like Streamlit for the user interface, LangChain for the AI conversation flow, and custom Python scripts for calculations and data storage. It’s a practical guide that shows you how to combine different technologies to create a powerful, automated sales tool.
 
 ## What's This Project About
 
@@ -25,14 +19,17 @@ The paper presents an innovative search system, TAG, that uses AI to enhance sem
 
 ## Why Work on It?
 
-Understanding how TAG works can give you insight into the future of data search. As businesses, researchers, and individuals handle more information than ever before, they face a significant challenge in making sense of it all. TAG solves this by leveraging AI for smarter searches that go beyond keywords and into the meaning of the content itself. 
-Whether you're involved in data science, research, or just want to know how future technology will improve information processing, this article explains why TAG is important and how it can impact a wide range of fields.
+In today’s fast-paced business world, AI isn’t just a buzzword — it’s a game-changer. This article shows you, through our fictional company Aniket Electronics Ltd., how to implement AI in a practical, revenue-generating way.
+
+You’ll learn how to create an AI system that can engage customers, provide personalized information, and capture leads — all automatically. Whether you’re in the smart home industry or not, the principles we cover can be applied to many businesses.
+
+By the end of this article, you’ll have a roadmap for creating your own AI-powered lead generation system, potentially transforming how you attract and engage customers.
 
 ## Architecture
 ![Design Diagram](design_docs/design.png)
 
 
-# Tutorial: Semantic Search Over Structured &amp; Unstructured Data
+# Tutorial: Lets Build Lead Generation Startup Using AI Agents
 
 ## Prerequisites
 - Python installed on your system.
@@ -61,7 +58,7 @@ Whether you're involved in data science, research, or just want to know how futu
 
 **Install Project Dependencies:**
 
-Follow these steps to set up and run the 'Real Estate Advisory Company Using AI Agents' project:
+Follow these steps to set up and run the 'Lets Build Lead Generation Startup Using AI Agents' project:
 
 1. Navigate to your project directory:
    ```
@@ -76,13 +73,11 @@ Follow these steps to set up and run the 'Real Estate Advisory Company Using AI 
    This command installs all the necessary Python packages listed in the requirements.txt file.
 
 
-## Run - Semantic Search Over Structured &amp; Unstructured Data
+## Run - Lets Build Lead Generation Startup Using AI Agents
 
    ```bash 
-      # run qdrant docker image
-      docker run -p 6333:6333 -p 6334:6334 -v C:\qdrant_data:/qdrant/storage:z qdrant/qdrant
-   
-      # Run Code RAG Using CodeLlama and Qdrant
+        
+      # Run Lets Build Lead Generation Startup Using AI Agents
       streamlit run app.py
       
    ```
